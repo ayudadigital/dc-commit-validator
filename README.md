@@ -9,10 +9,10 @@ Its a part of the Docker Command series
 Execute the following:
 
 - Using Bash, withinh your repository folder: `cd [git-repository-dir]; [/path/to/commit-validator]/entrypoint.sh`
-- Using Docker: `docker run --rm -v [git-repository-dir]:/workspace tpbtools/dc-commit-validator .`
+- Using Docker: `docker run --rm -v [git-repository-dir]:/workspace ayudadigital/dc-commit-validator .`
 - Using docker-command-launcher:`kd git-changelog-generator [git-repository-dir]`
 
-The script will check if the commit message(s) of your repository corresponding to the unreleased commit(s) fulfill the rules of [Git Changelog Generator](https://github.com/tpbtools/dc-git-changelog-generator)
+The script will check if the commit message(s) of your repository corresponding to the unreleased commit(s) fulfill the rules of [Git Changelog Generator](https://github.com/ayudadigital/dc-git-changelog-generator)
 
 It will return 0 if the the whole commit messages fulfill the rules, and 1 if at least one commit does not.
 
